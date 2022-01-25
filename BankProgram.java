@@ -7,10 +7,10 @@ public class BankProgram {
 		int accountNO,withdrawalAmount;
 		Bank IndianBank = new Bank();
 		Scanner scan = new Scanner(System.in);
-		System.out.println("Enter Account number : ");
+		System.out.println("Enter account number : ");
 		accountNO=scan.nextInt();
 		scan.nextLine();
-		System.out.println("Enter Withdrawal amount : ");
+		System.out.println("Enter withdrawal amount : ");
 		withdrawalAmount=scan.nextInt();
 		IndianBank.setaccNumer(accountNO);
 		IndianBank.setwithdraw(withdrawalAmount);
@@ -26,19 +26,19 @@ class Bank{
 	public int getaccNum() {
 		return accNumber;
 	}
-	public void setaccNumer(int a) {
-		this.accNumber=a;
+	public void setaccNumer(int accountNO) {
+		this.accNumber=accountNO;
 	}
 	public int getwithdraw() {
 		return withdraw;
 	}
-	public void setwithdraw(int b) {
-		this.withdraw=b;
+	public void setwithdraw(int withdrawlAmount) {
+		this.withdraw=withdrawlAmount;
 	}
 	public void withdrawAmount() {
 		if(withdraw<=accBalance) {
 			accBalance-=withdraw;
-			System.out.println("The Account number is : "+ accNumber);
+			System.out.println("withdrawal Sucessfull");
 			System.out.println("The withdrawal amount is : "+ withdraw);
 			System.out.println("The account balance is : "+ accBalance);
 		}else {

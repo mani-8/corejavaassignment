@@ -16,7 +16,7 @@ public void setStudentData(float si, String sn, float sm) {
 	
 }
 }
-public class ClassDemo {
+public class StudentActivity {
 
 public static void main(String [] args) {
 	float studentId,studentMark;
@@ -29,7 +29,7 @@ public static void main(String [] args) {
 	studentName=sc.next();
 	System.out.println("Enter your total mark");
 	studentMark=sc.nextFloat();
-	
+	sc.close();
 	st.setStudentData(studentId,studentName,studentMark);
 	System.out.println("Your ID: "+st.studentId +'\n'+"Your Name: "+st.studentName +'\n' +"Your Mark: "+st.studentMark);
 }

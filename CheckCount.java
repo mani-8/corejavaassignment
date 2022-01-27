@@ -9,7 +9,7 @@ public class CheckCount {
 	    int number = sc.nextInt();
 	    sc.close();
 	    int count=0;
-			for(;number!=0;) {
+			whilw(number!=0) {
 			    number/=10;
 			    count+=1;
 			}	

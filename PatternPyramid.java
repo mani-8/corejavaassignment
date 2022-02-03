@@ -23,7 +23,7 @@ public class PatternPyramid {
  static void space(int i) {
 	 while(i<=10) {
 			System.out.print(" ");
-			i++;//10 spaces
+			i++;
 			}
    }
 }

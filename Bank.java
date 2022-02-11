@@ -10,7 +10,7 @@ public class Bank {
 			System.out.println("1.Create Account \n2.Display Account \n3.To Deposit \n4.To Withdrawal \n5.Exit");
 			System.out.println("Enter your choise : ");
 			i=sc.nextInt();
-      sc.close();
+                        sc.close();
 			switch(i) {
 			case 1:
 				System.out.println("Enter your details");
@@ -42,4 +42,3 @@ public class Bank {
 		}while(i!=5);
 		System.out.println("Thank you vist again");
 	}
-B

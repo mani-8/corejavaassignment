@@ -292,6 +292,6 @@ public class BankProgram
                    System.out.println("Enter valid choice number");
            break;
          }
-      }while(choice!=7);
+      }while(choice!=8);
 }
 }

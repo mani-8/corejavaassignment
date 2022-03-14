@@ -1,11 +1,15 @@
 package junitTest;
 
 import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assumptions.assumeTrue;
+
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.AfterAll;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Assumptions;
 
 class CalculatorTest {
 	Calculator cal;
@@ -42,5 +46,14 @@ class CalculatorTest {
 	@Test
 	void errorTest() {
 		assertThrows(ArithmeticException.class,()->cal.div(10,0),"Exception");
+	}
+	@Test
+	@DisplayName(Value="adding two number")
+	void assumptionTest() {
+		boolean assumption =true;
+		assumeTrue(assumption);
+		assertEquals(30,cal.add(20,-10));
+		
+		
 	}
 }

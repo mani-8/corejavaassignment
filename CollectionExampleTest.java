@@ -1,4 +1,4 @@
-package testing.juniTestProject;
+package juniTest;
 
 import static org.junit.jupiter.api.Assertions.*;
 

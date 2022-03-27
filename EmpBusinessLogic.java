@@ -1,4 +1,4 @@
-package testing.juniTestProject;
+package juniTest;
 
 public class EmpBusinessLogic {
 
